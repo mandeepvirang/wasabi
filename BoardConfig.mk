@@ -165,5 +165,8 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
 # Treble
 BOARD_VNDK_VERSION := current
 
+# Sepolicy
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
 # Inherit from the proprietary version
 -include vendor/realme/wasabi/BoardConfigVendor.mk
