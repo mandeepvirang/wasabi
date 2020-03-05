@@ -19,6 +19,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.camera.sound.forced=0 \
     ro.audio.silent=0
 
+# Camera
+PRODUCT_PRODUCT_PROPERTIES += \
+    vendor.camera.aux.packagelist=org.lineageos.snap,org.codeaurora.snapcam
+
 # Display
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.opengles.version=196610 \
