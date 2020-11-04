@@ -1,2 +1,2 @@
 allow system_server app_zygote:process { getpgid };
-allow system_server init:binder { call };
+allow system_server init:binder { call transfer };

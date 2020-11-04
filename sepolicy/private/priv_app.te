@@ -1,0 +1,9 @@
+type atci_sys_prop, domain;
+type atci_sys_prop_exec, exec_type, file_type;
+init_daemon_domain(atci_sys_prop)
+
+allow priv_app apexd_prop:file { getattr map open };
+allow priv_app atci_sys_prop:file { getattr open };
+allow priv_app proc_interrupts:file open;
+allow priv_app sysfs:dir open;
+allow priv_app sysfs_android_usb:file open;
