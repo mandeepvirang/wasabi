@@ -85,8 +85,10 @@ PRODUCT_PACKAGES += \
     
 # Init
 PRODUCT_PACKAGES += \
-    init.mt6785.rc \
+    init.ago.rc \
     init.devicesetting.rc \
+    init.mt6785.rc \
+    fstab.enableswap \
     fstab.mt6785
 
 # Keylayouts
