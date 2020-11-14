@@ -39,3 +39,4 @@ allow init system_file:file execute_no_trans;
 allow init vendor_file:file mounton;
 allow init vendor_shell_exec:file execute_no_trans;
 allow init vendor_toolbox_exec:file execute_no_trans;
+allow init socket_device:sock_file unlink;
