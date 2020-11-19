@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_wasabi.mk
+    $(LOCAL_DIR)/lineage_wasabi.mk
