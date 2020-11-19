@@ -29,6 +29,7 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCLUDE_WIFI_EXT := true
 EVO_MAINTAINER := TheMalachite
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/data_only.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_wasabi
