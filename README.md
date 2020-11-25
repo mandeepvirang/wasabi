@@ -23,3 +23,18 @@ This device tree commonize them as Realme G90T series (codenamed _"wasabi"_)
 
 ## Device picture
 ![wasabi](https://cdn-files.kimovil.com/default/0004/34/thumb_333349_default_big.jpeg)
+
+
+If built doesn't boot,Try the following steps.
+cd frameworks/base/data/etc
+nano privapp-permissions-platform.xml
+
+And add the following lines before the last closing tag(</permissions>)
+
+<privapp-permissions package="com.mediatek.ims">
+        <permission name="android.permission.READ_PRECISE_PHONE_STATE"/>
+        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
+        <permission name="android.permission.NETWORK_SIGNAL_STRENGTH_WAKEUP"/>
+        <permission name="android.permission.PACKET_KEEPALIVE_OFFLOAD"/>
+        <permission name="android.permission.UPDATE_DEVICE_STATS"/>
+</privapp-permissions>
