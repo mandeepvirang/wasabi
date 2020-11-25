@@ -29,8 +29,8 @@ If built doesn't boot,Try the following steps.
 cd frameworks/base/data/etc
 nano privapp-permissions-platform.xml
 
-And add the following lines before the last closing tag(</permissions>)
-
+And add the following lines before the last closing tag
+```
 <privapp-permissions package="com.mediatek.ims">
         <permission name="android.permission.READ_PRECISE_PHONE_STATE"/>
         <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
@@ -38,3 +38,4 @@ And add the following lines before the last closing tag(</permissions>)
         <permission name="android.permission.PACKET_KEEPALIVE_OFFLOAD"/>
         <permission name="android.permission.UPDATE_DEVICE_STATS"/>
 </privapp-permissions>
+```
